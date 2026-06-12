@@ -3,52 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroForte - Sustentabilidade Magnífica</title>
+    <title>BioShield OS - Dashboard Agronômico</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">Agro<span>Forte</span></div>
-        <nav>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#pilares">Sustentabilidade</a>
-            <a href="#contato" class="btn-nav">Fale Conosco</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>O Futuro da Terra é <br><span class="highlight">Forte e Sustentável</span></h1>
-            <p>Unindo a tecnologia de ponta à preservação das nossas florestas para criar o agronegócio mais magnífico do planeta.</p>
-            <a href="#pilares" class="btn-main">Conheça Nossas Soluções</a>
-        </div>
-    </section>
-
-    <section id="pilares" class="features">
-        <h2>Nossos Pilares Magníficos</h2>
-        <div class="cards-container">
-            <div class="card">
-                <div class="icon">🌱</div>
-                <h3>Preservação Ativa</h3>
-                <p>Cultivos que respeitam o ciclo da floresta e enriquecem o solo naturalmente.</p>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="pulse-dot"></span>
+                <h2>BIO<span>OS</span></h2>
             </div>
-            <div class="card">
-                <div class="icon">🚜</div>
-                <h3>Alta Produtividade</h3>
-                <p>Tecnologia que otimiza recursos, gerando mais fartura com menos impacto ambiental.</p>
+            <nav class="menu">
+                <a href="#" class="active">🖥️ Painel Central</a>
+                <a href="#">🛰️ Telemetria Satelital</a>
+                <a href="#">💧 Gestão Hídrica</a>
+                <a href="#">🌲 Créditos de Carbono</a>
+                <a href="#">⚙️ Configurações</a>
+            </nav>
+            <div class="status-sitiante">
+                <p>📍 Sítio Boa Vista</p>
+                <small>Sistema Online</small>
             </div>
-            <div class="card">
-                <div class="icon">☀️</div>
-                <h3>Energia Limpa</h3>
-                <p>Operações movidas a fontes renováveis, direto do coração do nosso sítio tecnológico.</p>
-            </div>
-        </div>
-    </section>
+        </aside>
 
-    <footer>
-        <p>&copy; 2026 AgroForte. Cultivando um amanhã mais verde e próspero.</p>
-    </footer>
+        <main class="main-content">
+            
+            <header class="main-header">
+                <div>
+                    <h1>Monitoramento de Solo & Floresta</h1>
+                    <p>Dados em tempo real da sua produção sustentável</p>
+                </div>
+                <div class="date-badge">12 JUN 2026</div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Umidade do Solo</h3>
+                    <div class="value">68% <span class="up">▲</span></div>
+                    <p>Zona Norte - Ideal</p>
+                    <div class="progress-bar"><div class="progress" style="width: 68%;"></div></div>
+                </div>
+                <div class="metric-card">
+                    <h3>Saúde da Copa (NDVI)</h3>
+                    <div class="value">0.82 <span class="stable">●</span></div>
+                    <p>Bioma Preservado</p>
+                    <div class="progress-bar"><div class="progress green" style="width: 82%;"></div></div>
+                </div>
+                <div class="metric-card">
+                    <h3>CO₂ Retido</h3>
+                    <div class="value">14.2 T <span class="up">▲</span></div>
+                    <p>Este mês (+2.1T)</p>
+                    <div class="progress-bar"><div class="progress orange" style="width: 55%;"></div></div>
+                </div>
+                <div class="metric-card">
+                    <h3>Água Reutilizada</h3>
+                    <div class="value">94.5% <span class="up">▲</span></div>
+                    <p>Captação de Chuva</p>
+                    <div class="progress-bar"><div class="progress" style="width: 94%;"></div></div>
+                </div>
+            </section>
+
+            <section class="analytics-section">
+                <div class="chart-container">
+                    <h3>Previsão de Colheita vs. Regeneração da Mata</h3>
+                    <div class="simulated-chart">
+                        <div class="bar" style="--h: 40%;"><span>Flor.</span></div>
+                        <div class="bar" style="--h: 65%;"><span>Prod.</span></div>
+                        <div class="bar" style="--h: 55%;"><span>Flor.</span></div>
+                        <div class="bar" style="--h: 85%;"><span>Prod.</span></div>
+                        <div class="bar" style="--h: 70%;"><span>Flor.</span></div>
+                        <div class="bar" style="--h: 95%;"><span>Prod.</span></div>
+                    </div>
+                </div>
+
+                <div class="alerts-container">
+                    <h3>Insights da IA (Mãe Terra)</h3>
+                    <ul class="alert-list">
+                        <li class="alert-item info">
+                            <strong>Irrigação Inteligente:</strong> Desligada automaticamente. Umidade ideal detectada via satélite.
+                        </li>
+                        <li class="alert-item success">
+                            <strong>Crédito de Carbono:</strong> Mais 5 hectares homologados para o mercado verde.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
 </body>
 </html>
